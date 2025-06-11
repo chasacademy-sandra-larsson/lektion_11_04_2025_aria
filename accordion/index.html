@@ -11,10 +11,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-   
     <div class="accordion">
         <div class="accordion-item">
-            <button class="accordion-trigger">
+            <button 
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion-content-1"
+                id="accordion-title-1"
+            >
                 <span class="accordion-title">
                     <span class="accordion-title-text">
                         Section 1
@@ -22,14 +26,25 @@
                     <span class="accordion-icon"></span>
                 </span>
             </button>
-            <div class="accordion-content">
+            <div 
+                role="region"
+                aria-labelledby="accordion-title-1"
+                class="accordion-content"
+                id="accordion-content-1"
+                hidden
+            >
                 <p>
                     Content for section 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
                 </p>
             </div>
         </div>
         <div class="accordion-item">
-            <button class="accordion-trigger">
+            <button 
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion-content-2"
+                id="accordion-title-2"
+            >
                 <span class="accordion-title">
                     <span class="accordion-title-text">
                         Section 2
@@ -37,14 +52,25 @@
                     <span class="accordion-icon"></span>
                 </span>
             </button>
-            <div class="accordion-content">
+            <div 
+                role="region"
+                aria-labelledby="accordion-title-2"
+                class="accordion-content"
+                id="accordion-content-2"
+                hidden
+            >
                 <p>
                     Content for section 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
                 </p>
             </div>
         </div>
         <div class="accordion-item">
-            <button class="accordion-trigger">
+            <button 
+                class="accordion-trigger"
+                aria-expanded="false"
+                aria-controls="accordion-content-3"
+                id="accordion-title-3"
+            >
                 <span class="accordion-title">
                     <span class="accordion-title-text">
                         Section 3
@@ -52,12 +78,19 @@
                     <span class="accordion-icon"></span>
                 </span>
             </button>
-            <div class="accordion-content">
+            <div 
+                role="region"
+                aria-labelledby="accordion-title-3"
+                class="accordion-content"
+                id="accordion-content-3"
+                hidden
+            >
                 <p>
                     Content for section 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
                 </p>
             </div>
         </div>
     </div>
+   
 </body>
 </html>

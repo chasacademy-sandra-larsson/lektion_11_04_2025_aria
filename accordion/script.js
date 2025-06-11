@@ -9,6 +9,18 @@
             
             // Toggle the hidden attribute
             content.toggleAttribute('hidden');
+
+            const isExpanded = content.hasAttribute("hidden") ? "false" : "true";
+
+            trigger.setAttribute("aria-expanded", isExpanded);
+
+            if(isExpanded) {
+
+                content.setAttribute("tabindex", "-1");
+
+                content.focus();
+            }
+
             
         });
     });
